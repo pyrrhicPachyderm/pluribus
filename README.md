@@ -10,5 +10,8 @@ Furthermore, it can generate pluribuses&mdash;editions containing any subset of 
 It manages contents tables and indices within every volume and edition.
 Lastly, by leveraging [zref-xr](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
 
-Pluribus uses the build automation tool Make.
-It can be easily incorporated into a project's overarching Makefile, or made to stand alone.
+## Using Pluribus
+
+Pluribus consists of a script that generates a Makefile, which in turn can be used to compile your book's volumes, omnibus, and pluribuses.
+By default, it generates a standalone Makefile.
+However, it may be configured to generate a set of rules that can be incorporated into a project's overarching Makefile.
