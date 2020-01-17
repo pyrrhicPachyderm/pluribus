@@ -38,3 +38,22 @@ Every path in the configuration file should be relative to the location of the c
 Additionally, by default, the `.pluribus/` directory and the resulting Makefile are created alongside the configuration file.
 
 ### The Configuration File
+
+Pluribus' configuration uses the [TOML](https://github.com/toml-lang/toml) format.
+Note that this means you can use `#` to begin a comment within it.
+
+Pluribus' configuration file can be divided into two parts.
+The first consists of simple key-value pairs, separated by an `=` sign, that modify the overall behaviour of Pluribus.
+These should be at the beginning of the file, entirely before the second part.
+The list of available option is given [below](#user-content-configuration-options).
+
+The second part details the various volumes to be managed by Pluribus.
+The information about each volume begins with the tag for the volume, in square brackets.
+For example `[the-first-volume]`.
+Every subsequent key-value pair defines a property of that volume.
+Some of these properties are compulsory, and must be included for every volume.
+The list of properties is given [below](#user-content-volume-properties).
+
+#### Volume Properties
+
+#### Configuration Options
