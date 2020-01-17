@@ -39,7 +39,7 @@ Additionally, by default, the `.pluribus/` directory and the resulting Makefile 
 
 ### The Configuration File
 
-Pluribus' configuration uses the [TOML](https://github.com/toml-lang/toml) format.
+Pluribus' configuration file uses the [TOML](https://github.com/toml-lang/toml) format.
 Note that this means you can use `#` to begin a comment within it.
 
 Pluribus' configuration file can be divided into two parts.
