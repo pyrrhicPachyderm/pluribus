@@ -1,5 +1,9 @@
 # Pluribus
 
+> **_NOTE:_**
+> Pluribus is a work in progress.
+> The following documents its intended aims, features, and usage, serving as a to-do list and specification as much as anything else.
+
 Pluribus is a utility to help create multi-volume books in LaTeX.
 It generates the volumes in separate PDF files, and as an omnibus edition.
 Furthermore, it can generate pluribuses&mdash;editions containing any subset of volumes you select.
