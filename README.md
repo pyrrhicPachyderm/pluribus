@@ -23,7 +23,7 @@ By default, Pluribus looks for the file `pluribus.toml`, in the directory where 
 The contents of configuration file are detailed [below](#user-content-the-configuration-file).
 
 Pluribus also requires one directory for each volume.
-This directory should contain a `content.tex` file.
+Each directory should contain a `content.tex` file.
 The `content.tex` file contains all the main matter for its relevant volume; everything that goes between LaTeX's `\mainmatter` and `\backmatter` commands.
 This file is loaded in LaTeX using the [`\import`](https://ctan.org/pkg/import) command.
 As such, it can safely `\input`, `\include`, `\includegraphics`, or `\subimport` files relative to its own location.
