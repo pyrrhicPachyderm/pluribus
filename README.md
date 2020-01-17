@@ -8,7 +8,7 @@ Pluribus is a utility to help create multi-volume books in LaTeX.
 It generates the volumes in separate PDF files, and as an omnibus edition.
 Furthermore, it can generate pluribuses&mdash;editions containing any subset of volumes you select.
 It manages contents tables and indices within every volume and edition.
-Lastly, by leveraging [zref-xr](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
+Lastly, by leveraging [`zref-xr`](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
 
 ## Using Pluribus
 
