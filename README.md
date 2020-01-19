@@ -10,6 +10,13 @@ Furthermore, it can generate pluribuses&mdash;editions containing any subset of 
 It manages contents tables and indices within every volume and edition.
 Lastly, by leveraging [`zref-xr`](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
 
+## Installing Pluribus
+
+To install Pluribus, clone this repository, `cd` into it, then run `make install`.
+
+To uninstall it, run `make uninstall`.
+It is installed using `pip3`, so you can also uninstall it using `pip3 uninstall pluribus`.
+
 ## Using Pluribus
 
 Pluribus consists of a script that generates a Makefile, which in turn can be used to compile your book's volumes, omnibus, and pluribuses.
