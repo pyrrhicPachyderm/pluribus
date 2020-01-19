@@ -58,7 +58,7 @@ The second part details the various volumes to be managed by Pluribus.
 The information about each volume begins with the tag for the volume, in square brackets.
 For example `[the-first-volume]`.
 Every subsequent key-value pair defines a property of that volume.
-Some of these properties are compulsory, and must be included for every volume.
+Some of these properties are mandatory, and must be included for every volume.
 The list of properties is given [below](#user-content-volume-properties).
 
 #### Volume Properties
