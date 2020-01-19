@@ -69,3 +69,17 @@ Two of the volume properties are mandatory: `title` and `content`.
 This file must be a `.tex` file, containing the main matter for the volume.
 
 #### Configuration Options
+
+The following configuration options are available.
+These should be set above any of the volume definitions.
+- [`documentclass` and `documentclass-options`](#usercontent-option-documentclass-and-documentclass-options)
+
+##### `documentclass` and `documentclass-options`
+These two strings are used for the first line of each LaTeX file:
+```\documentclass[<documentclass-options>]{<documentclass>}```
+For example, you might use:
+```documentclass = "memoir"
+documentclass-options = "a4paper,10pt"```
+The defaults are:
+```documentclass = "book"
+documentclass-options = ""```
