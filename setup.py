@@ -10,4 +10,7 @@ setup(
 			"pluribus = pluribus.__main__:main"
 		]
 	},
+	install_requires=[
+		'toml',
+	],
 )

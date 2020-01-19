@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import toml
 
 def print_usage_error(args):
 	print("Usage: {} <config file>".format(args[0]), file=sys.stderr)
