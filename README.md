@@ -63,4 +63,9 @@ The list of properties is given [below](#user-content-volume-properties).
 
 #### Volume Properties
 
+Two of the volume properties are mandatory: `title` and `content`.
+`title` is a string, used as the title for the volume, set using LaTeX's `\title` command.
+`content` is also a string, used as a file path.
+This file must be a `.tex` file, containing the main matter for the volume.
+
 #### Configuration Options
