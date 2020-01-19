@@ -52,7 +52,7 @@ Note that this means you can use `#` to begin a comment within it.
 Pluribus' configuration file can be divided into two parts.
 The first consists of simple key-value pairs, separated by an `=` sign, that modify the overall behaviour of Pluribus.
 These should be at the beginning of the file, entirely before the second part.
-The list of available option is given [below](#user-content-configuration-options).
+The list of available options is given [below](#user-content-configuration-options).
 
 The second part details the various volumes to be managed by Pluribus.
 The information about each volume begins with the tag for the volume, in square brackets.
