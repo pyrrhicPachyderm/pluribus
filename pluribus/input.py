@@ -3,11 +3,11 @@ import sys
 import toml
 
 def print_usage_error(args):
-	print("Usage: {} <config file>".format(args[0]), file=sys.stderr)
+	print("Usage: pluribus <config file>", file=sys.stderr)
 	exit(1)
 
 def get_config_file_path(args):
-	if(len(args) != 2):
+	if(len(args) != 1):
 		print_usage_error(args)
 	else:
-		return args[1]
+		return args[0]
