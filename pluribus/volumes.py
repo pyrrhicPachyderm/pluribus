@@ -13,5 +13,6 @@ class Volume:
 		"content":str,
 	}
 	
-	def __init__(self, volume_dict, all_dict):
+	def __init__(self, tag, volume_dict, all_dict):
+		self.tag = tag
 		set_options(self, self._options_type, [volume_dict, all_dict, self._options_default])
