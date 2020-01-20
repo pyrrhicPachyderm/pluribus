@@ -7,6 +7,7 @@ def main(args=None):
 		args = sys.argv[1:]
 	
 	config_file_path = get_config_file_path(args)
+	config = read_config_file(config_file_path)
 
 if __name__ == "__main__":
 	main()

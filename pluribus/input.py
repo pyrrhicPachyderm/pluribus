@@ -11,3 +11,6 @@ def get_config_file_path(args):
 		print_usage_error(args)
 	else:
 		return args[0]
+
+def read_config_file(config_file_path):
+	return toml.load(config_file_path)
