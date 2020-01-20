@@ -72,7 +72,7 @@ This file must be a `.tex` file, containing the main matter for the volume.
 
 The following configuration options are available.
 These should be set above any of the volume definitions.
-- [`documentclass` and `documentclass-options`](#usercontent-option-documentclass-and-documentclass-options)
+- [`documentclass` and `documentclass-options`](#user-content-documentclass-and-documentclass-options)
 
 ##### `documentclass` and `documentclass-options`
 These two strings are used for the first line of each LaTeX file:
