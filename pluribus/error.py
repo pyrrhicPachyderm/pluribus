@@ -11,6 +11,9 @@ def usage(args):
 def read(file_path):
 	err("Cannot read file: {}".format(file_path))
 
+def toml_parse(err_string):
+	err("Error parsing config file: {}".format(err_string))
+
 def type(variable_name, required_type):
 	err("'{}' must be of type {}".format(variable_name, required_type.__name__))
 

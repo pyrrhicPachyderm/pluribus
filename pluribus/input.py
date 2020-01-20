@@ -14,3 +14,5 @@ def read_config_file(config_file_path):
 		return toml.load(config_file_path)
 	except (FileNotFoundError, IsADirectoryError):
 		error.read(config_file_path)
+	except toml.decoder.TomlDecodeError as err_string:
+		error.toml_parse(err_string)
