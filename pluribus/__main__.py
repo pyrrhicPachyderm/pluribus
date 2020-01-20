@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-from pluribus.input import get_config_file_path
+from pluribus.input import get_config_file_path, read_config_file
 
 def main(args=None):
 	if args is None:
