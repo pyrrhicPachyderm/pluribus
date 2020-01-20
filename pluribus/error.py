@@ -7,3 +7,6 @@ def _print(err_string):
 
 def usage(args):
 	_print("Usage: pluribus <config file>")
+
+def read(file_path):
+	_print("Cannot read file: {}".format(file_path))
