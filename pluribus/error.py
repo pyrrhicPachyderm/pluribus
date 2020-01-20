@@ -16,3 +16,6 @@ def type(variable_name, required_type):
 
 def option_not_set(option_name):
 	err("{} must be set".format(option_name))
+
+def invalid_option(option_name):
+	err("{} is not a valid option".format(option_name))

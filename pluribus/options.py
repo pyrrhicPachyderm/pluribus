@@ -23,3 +23,27 @@ def set_option(obj, option, option_type, option_values):
 	
 	#No valid value found.
 	error.option_not_set(option)
+
+def set_options(obj, type_dict, option_dicts):
+	"""Set all the options defined by type_dict, given a list of dictionaries with possible values.
+	
+	option_dicts are searched in order, with earlier entries having higher priority.
+	Every option in type_dict must be given a non-None value in one of the option_dicts.
+	Conversely, every value in every one of the option_dicts must have a corresponding
+	entry in type_dict.
+	"""
+	
+	#First, check that all entries in all option_dicts are matched in type_dict.
+	option_set = set()
+	for option_dict in option_dicts:
+		option_set |= option_dict.keys()
+	for option in option_set:
+		if not option in type_dict:
+			error.invalid_option(option)
+	
+	#Next, set the values for entries in type_dict.
+	for option, option_type in type_dict.items():
+		option_values = []
+		for option_dict in option_dicts:
+			option_values.append(option_dict.get(option, None))
+		set_option(obj, option, option_type, option_values)
