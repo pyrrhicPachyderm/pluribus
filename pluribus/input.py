@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 import sys
 import toml
-
-def print_usage_error(args):
-	print("Usage: pluribus <config file>", file=sys.stderr)
-	exit(1)
+import pluribus.error as error
 
 def get_config_file_path(args):
 	if(len(args) != 1):
-		print_usage_error(args)
+		error.usage(args)
 	else:
 		return args[0]
 
