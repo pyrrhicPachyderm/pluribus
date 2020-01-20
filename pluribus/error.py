@@ -13,3 +13,6 @@ def read(file_path):
 
 def type(variable_name, required_type):
 	err("{} must be of type {}".format(variable_name, required_type.__name__))
+
+def option_not_set(option_name):
+	err("{} must be set".format(option_name))
