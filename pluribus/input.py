@@ -4,7 +4,7 @@ import toml
 import pluribus.error as error
 
 def get_config_file_path(args):
-	if(len(args) != 1):
+	if len(args) != 1:
 		error.usage(args)
 	else:
 		return args[0]
