@@ -68,6 +68,20 @@ Two of the volume properties are mandatory: `title` and `content`.
 `content` is also a string, used as a file path.
 This file must be a `.tex` file, containing the main matter for the volume.
 
+#### Reserved Volumes
+
+Some volume tags are reserved by Pluribus: `all`, `omnibus`, and `pluribus`.
+If these are used, these do not define new volumes.
+
+##### Volume `all`
+
+Any properties set in this volume are set for all other volumes, including `omnibus` and `pluribus`.
+Any of these properties are overwritten for a given volume if they are set specifically in that volume's entry.
+
+##### Volume `omnibus`
+
+##### Volume `pluribus`
+
 #### Configuration Options
 
 The following configuration options are available.
