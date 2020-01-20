@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import pluribus.error as error
 
+#If an option has a type, but no default (or a None default), it is mandatory.
+
 def set_option(obj, option, option_type, option_values):
 	"""Set the value of an option from a list of possible values.
 	
