@@ -76,10 +76,16 @@ These should be set above any of the volume definitions.
 
 ##### `documentclass` and `documentclass-options`
 These two strings are used for the first line of each LaTeX file:
-```\documentclass[<documentclass-options>]{<documentclass>}```
+```
+\documentclass[<documentclass-options>]{<documentclass>}
+```
 For example, you might use:
-```documentclass = "memoir"
-documentclass-options = "a4paper,10pt"```
+```
+documentclass = "memoir"
+documentclass-options = "a4paper,10pt"
+```
 The defaults are:
-```documentclass = "book"
-documentclass-options = ""```
+```
+documentclass = "book"
+documentclass-options = ""
+```
