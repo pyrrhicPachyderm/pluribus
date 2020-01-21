@@ -87,8 +87,13 @@ Any of these properties are overwritten for a given volume if they are set speci
 
 The following configuration options are available.
 These should be set above any of the volume definitions.
+- [`makefile`](#user-content-makefile)
 - [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass_options)
 - [`disable_safety`](#user-content-disable_safety)
+
+##### `makefile`
+This string simply sets the path of the Makefile created by Pluribus, relative to the configuration file.
+The default is `Makefile`.
 
 ##### `documentclass` and `documentclass_options`
 These two strings are used for the first line of each LaTeX file:

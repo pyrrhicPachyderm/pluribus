@@ -6,12 +6,14 @@ class Config:
 		"documentclass":"book",
 		"documentclass_options":"",
 		"disable_safety":False,
+		"makefile":"Makefile",
 	}
 	
 	_options_type = {
 		"documentclass":str,
 		"documentclass_options":str,
 		"disable_safety":bool,
+		"makefile":str,
 	}
 	
 	def __init__(self, config_dict):
