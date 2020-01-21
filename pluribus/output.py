@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import pluribus.error as error
-import Config from pluribus.config
+from pluribus.config import Config
 
 def open_file(path, mode):
 	try:
