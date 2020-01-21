@@ -6,11 +6,13 @@ class Config:
 	_options_default = {
 		"documentclass":"book",
 		"documentclass_options":"",
+		"disable_safety":false,
 	}
 	
 	_options_type = {
 		"documentclass":str,
 		"documentclass_options":str,
+		"disable_safety":bool,
 	}
 	
 	def __init__(self, config_dict):

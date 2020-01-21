@@ -87,6 +87,7 @@ Any of these properties are overwritten for a given volume if they are set speci
 The following configuration options are available.
 These should be set above any of the volume definitions.
 - [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass_options)
+- [`disable_safety`](#user-content-disable_safety)
 
 ##### `documentclass` and `documentclass_options`
 These two strings are used for the first line of each LaTeX file:
@@ -103,3 +104,8 @@ The defaults are:
 documentclass = "book"
 documentclass_options = ""
 ```
+
+##### `disable_safety`
+Pluribus ordinary refuses to overwrite a Makefile which was not itself created by Pluribus.
+It inserts a comment in the first line of its own Makefiles to identify this.
+Setting `disable_safety = true` overrides this behaviour, allowing Pluribus to overwrite manually created Makefiles.
