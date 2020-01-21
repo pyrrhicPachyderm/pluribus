@@ -11,3 +11,6 @@ def change_directory(path):
 		os.chdir(path)
 	except (FileNotFoundError, NotADirectoryError):
 		error.change_directory(path)
+
+def file_exists(file_path):
+	return os.path.isfile(file_path)

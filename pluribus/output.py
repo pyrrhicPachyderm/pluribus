@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pluribus.error as error
+from pluribus.files import file_exists
 from pluribus.config import Config
 
 def open_file(path, mode):
@@ -14,7 +15,7 @@ def check_safety_line(path, safety_line):
 		return file.readline().rstrip('\n') == safety_line
 
 def open_file_safe(path, mode, safety_line, config):
-	if config.disable_safety or check_safety_line(path, safety_line):
+	if config.disable_safety or not file_exists(path) or check_safety_line(path, safety_line):
 		return open_file(path, mode)
 	else:
 		error.safety_line(path)
