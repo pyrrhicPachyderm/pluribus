@@ -4,6 +4,7 @@ from pluribus.input import get_config_file_path, read_config_file
 from pluribus.files import get_directory, change_directory
 from pluribus.volumes import VolumeContainer
 from pluribus.config import Config
+from pluribus.makefile import Makefile
 
 def main(args=None):
 	if args is None:
@@ -16,6 +17,7 @@ def main(args=None):
 	
 	volume_container = VolumeContainer(config_dict)
 	config = Config(config_dict)
+	makefile = Makefile(config)
 
 if __name__ == "__main__":
 	main()
