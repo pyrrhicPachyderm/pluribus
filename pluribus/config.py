@@ -5,7 +5,7 @@ class Config:
 	_options_default = {
 		"documentclass":"book",
 		"documentclass_options":"",
-		"disable_safety":false,
+		"disable_safety":False,
 	}
 	
 	_options_type = {
