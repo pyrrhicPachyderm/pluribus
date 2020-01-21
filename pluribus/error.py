@@ -8,6 +8,9 @@ def err(err_string):
 def usage(args):
 	err("Usage: pluribus <config file>")
 
+def change_directory(dir_path):
+	err("Cannot move to directory {}".format(dir_path))
+
 def open_file(file_path):
 	err("Cannot open file: {}".format(file_path))
 
