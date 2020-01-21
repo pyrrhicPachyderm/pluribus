@@ -8,8 +8,8 @@ def err(err_string):
 def usage(args):
 	err("Usage: pluribus <config file>")
 
-def read(file_path):
-	err("Cannot read file: {}".format(file_path))
+def open_file(file_path):
+	err("Cannot open file: {}".format(file_path))
 
 def toml_parse(err_string):
 	err("Error parsing config file: {}".format(err_string))
