@@ -7,6 +7,7 @@ class Config:
 		"documentclass_options":"",
 		"disable_safety":False,
 		"makefile":"Makefile",
+		"makefile_standalone":True,
 	}
 	
 	_options_type = {
@@ -14,6 +15,7 @@ class Config:
 		"documentclass_options":str,
 		"disable_safety":bool,
 		"makefile":str,
+		"makefile_standalone":bool,
 	}
 	
 	def __init__(self, config_dict):
