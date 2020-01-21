@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from pluribus.options import set_options
 
 class Volume:
