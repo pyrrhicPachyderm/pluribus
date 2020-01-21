@@ -5,12 +5,12 @@ from pluribus.options import set_options
 class Config:
 	_options_default = {
 		"documentclass":"book",
-		"documentclass-options":"",
+		"documentclass_options":"",
 	}
 	
 	_options_type = {
 		"documentclass":str,
-		"documentclass-options":str,
+		"documentclass_options":str,
 	}
 	
 	def __init__(self, config_dict):

@@ -86,20 +86,20 @@ Any of these properties are overwritten for a given volume if they are set speci
 
 The following configuration options are available.
 These should be set above any of the volume definitions.
-- [`documentclass` and `documentclass-options`](#user-content-documentclass-and-documentclass-options)
+- [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass-options)
 
-##### `documentclass` and `documentclass-options`
+##### `documentclass` and `documentclass_options`
 These two strings are used for the first line of each LaTeX file:
 ```
-\documentclass[<documentclass-options>]{<documentclass>}
+\documentclass[<documentclass_options>]{<documentclass>}
 ```
 For example, you might use:
 ```
 documentclass = "memoir"
-documentclass-options = "a4paper,10pt"
+documentclass_options = "a4paper,10pt"
 ```
 The defaults are:
 ```
 documentclass = "book"
-documentclass-options = ""
+documentclass_options = ""
 ```
