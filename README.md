@@ -86,7 +86,7 @@ Any of these properties are overwritten for a given volume if they are set speci
 
 The following configuration options are available.
 These should be set above any of the volume definitions.
-- [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass-options)
+- [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass_options)
 
 ##### `documentclass` and `documentclass_options`
 These two strings are used for the first line of each LaTeX file:
