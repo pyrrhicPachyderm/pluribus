@@ -11,6 +11,9 @@ def usage(args):
 def open_file(file_path):
 	err("Cannot open file: {}".format(file_path))
 
+def safety_line(file_path):
+	err("Will not overwrite {}; file manually created\nUse disable_safety = true to override".format(file_path))
+
 def toml_parse(err_string):
 	err("Error parsing config file: {}".format(err_string))
 
