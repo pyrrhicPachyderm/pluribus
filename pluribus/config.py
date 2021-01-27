@@ -20,6 +20,9 @@ class Config:
 	
 	def __init__(self, config_dict):
 		options_dict = dict()
+		#TOML tables, here representing volumes, are given as nested dictionaries.
+		#First parse all keys that are general options, not volumes.
+		#Volumes are handled in `volumes.py`.
 		for key, value in config_dict.items():
 			if not isinstance(value, dict):
 				options_dict[key] = value
