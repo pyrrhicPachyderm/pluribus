@@ -15,8 +15,8 @@ def main(args=None):
 	
 	change_directory(get_directory(config_file_path))
 	
-	volume_container = VolumeContainer(config_dict)
 	config = Config(config_dict)
+	volume_container = VolumeContainer(config_dict)
 	makefile = Makefile(config)
 
 if __name__ == "__main__":
