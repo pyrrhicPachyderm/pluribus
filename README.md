@@ -100,6 +100,10 @@ The default is `Makefile`.
 This sets whether the Makefile created by Pluribus is intended to stand alone or not; whether it features an `all` rule.
 It defaults to `true`.
 
+##### `pluribus_directory`
+This sets the path to the directory where Pluribus creates its `.tex` files, and other supporting files, relative to the directory containing the Makefile.
+It defaults to `.pluribus`.
+
 ##### `documentclass` and `documentclass_options`
 These two strings are used for the first line of each LaTeX file:
 ```

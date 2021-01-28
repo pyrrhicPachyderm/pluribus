@@ -8,6 +8,7 @@ class Config:
 		"disable_safety":False,
 		"makefile":"Makefile",
 		"makefile_standalone":True,
+		"pluribus_directory":".pluribus",
 	}
 	
 	_options_type = {
@@ -16,6 +17,7 @@ class Config:
 		"disable_safety":bool,
 		"makefile":str,
 		"makefile_standalone":bool,
+		"pluribus_directory":str,
 	}
 	
 	def __init__(self, config_dict):
