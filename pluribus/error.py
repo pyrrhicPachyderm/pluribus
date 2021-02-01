@@ -11,6 +11,9 @@ def usage(args):
 def change_directory(dir_path):
 	err("Cannot move to directory {}".format(dir_path))
 
+def create_directory(dir_path):
+	err("Cannot create directory {}".format(dir_path))
+
 def open_file(file_path):
 	err("Cannot open file: {}".format(file_path))
 

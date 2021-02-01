@@ -14,3 +14,12 @@ def change_directory(path):
 
 def file_exists(file_path):
 	return os.path.isfile(file_path)
+
+def directory_exists(directory_path):
+	return os.path.isdir(directory_path)
+
+def create_directory(directory_path):
+	try:
+		os.mkdir(directory_path)
+	except:
+		error.create_directory(directory_path)
