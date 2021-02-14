@@ -18,7 +18,7 @@ To uninstall it, run `sudo make uninstall`.
 
 ## Using Pluribus
 
-Pluribus is run to generate a Makefile, which in turn can be used to compile your book's volumes, omnibus, and pluribuses.
+Pluribus is run to generate a Makefile, which in turn can be used with GNU make to compile your book's volumes, omnibus, and pluribuses.
 By default, it generates a standalone Makefile.
 However, it may be configured to generate a set of rules that can be incorporated into a project's overarching Makefile.
 
