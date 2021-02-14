@@ -18,6 +18,7 @@ def main(args=None):
 	config = Config(config_dict)
 	volume_container = VolumeContainer(config_dict)
 	makefile = Makefile(config)
+	pluribus_dir = PluribusDir(config)
 
 if __name__ == "__main__":
 	main()
