@@ -31,7 +31,7 @@ As such, it may lie in any location on the file system, and can safely `\input`,
 Pluribus relies on a configuration file, in the [TOML](https://github.com/toml-lang/toml) format.
 This can be used to modify the behaviour of Pluribus, such as selecting between a standalone and partial Makefile.
 More importantly, however, the configuration file defines the volumes to be managed by Pluribus.
-The path to the configuration file must be provided as an argument to Pluribus, when it is run.
+The path to the configuration file must be provided as an argument to Pluribus when it is run.
 The contents of the configuration file are detailed [below](#user-content-the-configuration-file).
 
 Pluribus creates its own `.pluribus/` directory; by default, this lies alongside the created Makefile.
