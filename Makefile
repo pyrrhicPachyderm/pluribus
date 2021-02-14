@@ -27,3 +27,9 @@ uninstall_docs:
 #Make will consider it only if the prerequisite already exists.
 %:: %.ronn
 	ronn --roff $<
+
+clean:
+	@#Delete everything in the docs folder except the original ronn files.
+	find docs/ -type f ! -name "*.ronn" -exec rm -f {} +
+
+.PHONY: clean
