@@ -106,6 +106,7 @@ The following configuration options are available.
 These should be set above any of the volume definitions.
 - [`makefile`](#user-content-makefile)
 - [`makefile_standalone`](#user-content-makefile)
+- [`pluribus_directory`](#user-content-pluribus_directory)
 - [`disable_safety`](#user-content-disable_safety)
 
 ##### `makefile`
