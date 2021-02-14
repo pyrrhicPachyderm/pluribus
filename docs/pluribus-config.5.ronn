@@ -1,6 +1,9 @@
 # pluribus-config(5) -- config file format for pluribus
 
 ## EXAMPLES
+
+### With standalone makefile
+
 	makefile = "Makefile"
 	makefile_standalone = true
 	
@@ -18,3 +21,26 @@
 	[all]
 	documentclass = "memoir"
 	documentclass_options = "a4paper,10pt"
+
+### With partial makefile
+
+The contents of `pluribus-config.toml`:
+
+	makefile = "pluribus.mk"
+	makefile_standalone = false
+	
+	[the-first-volume]
+	title = "A Story: Volume One"
+	contents = "the-first-volume/main.tex"
+
+And the contents of `Makefile`, in the same directory as `pluribus-config.toml`:
+
+	all: the-first-volume.pdf
+	.PHONY: all
+	
+	include pluribus.mk
+	
+	pluribus.mk: pluribus-config.toml
+		pluribus $<
+
+This leverages GNU make's ability to generate makefiles which it is provided rules for, in order to include them.
