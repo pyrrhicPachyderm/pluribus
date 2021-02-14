@@ -1,1 +1,20 @@
 # pluribus-config(5) -- config file format for pluribus
+
+## EXAMPLES
+	makefile = "Makefile"
+	makefile_standalone = true
+	
+	[the-first-volume]
+	title = "A Story: Volume One"
+	contents = "the-first-volume/main.tex"
+	
+	[the-second-volume]
+	title = "A Story: Volume Two"
+	contents = "the-second-volume/main.tex"
+	
+	[omnibus]
+	title = "A Story: Omnibus Edition"
+	
+	[all]
+	documentclass = "memoir"
+	documentclass_options = "a4paper,10pt"
