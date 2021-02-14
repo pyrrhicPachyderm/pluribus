@@ -15,7 +15,6 @@ Lastly, by leveraging [`zref-xr`](https://ctan.org/pkg/zref), Pluribus facilitat
 To install Pluribus, clone this repository, `cd` into it, then run `sudo make install`.
 
 To uninstall it, run `sudo make uninstall`.
-It is installed using `pip3`, so you can also uninstall it using `pip3 uninstall pluribus`.
 
 ## Using Pluribus
 
