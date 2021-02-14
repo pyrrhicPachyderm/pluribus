@@ -5,11 +5,15 @@ class Volume:
 	_options_default = {
 		"title":None,
 		"content":None,
+		"documentclass":"book",
+		"documentclass_options":"",
 	}
 	
 	_options_type = {
 		"title":str,
 		"content":str,
+		"documentclass":str,
+		"documentclass_options":str,
 	}
 	
 	def __init__(self, tag, volume_dict, all_dict):

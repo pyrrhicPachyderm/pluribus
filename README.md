@@ -67,6 +67,24 @@ Two of the volume properties are mandatory: `title` and `content`.
 `title` is a string, used as the title for the volume, set using LaTeX's `\title` command.
 `content` is also a string, used as a file path.
 This file must be a `.tex` file, containing the main matter for the volume.
+Other volume properties are optional, and are given below.
+
+##### `documentclass` and `documentclass_options`
+These two strings are used for the first line of each LaTeX file:
+```
+\documentclass[<documentclass_options>]{<documentclass>}
+```
+For example, you might use:
+```
+documentclass = "memoir"
+documentclass_options = "a4paper,10pt"
+```
+The defaults are:
+```
+documentclass = "book"
+documentclass_options = ""
+```
+Normally, these will be the same for all volumes, and should be set with the reserved volume `all`.
 
 #### Reserved Volumes
 
@@ -88,7 +106,6 @@ The following configuration options are available.
 These should be set above any of the volume definitions.
 - [`makefile`](#user-content-makefile)
 - [`makefile_standalone`](#user-content-makefile)
-- [`documentclass` and `documentclass_options`](#user-content-documentclass-and-documentclass_options)
 - [`disable_safety`](#user-content-disable_safety)
 
 ##### `makefile`
@@ -102,22 +119,6 @@ It defaults to `true`.
 ##### `pluribus_directory`
 This sets the path to the directory where Pluribus creates its `.tex` files, and other supporting files, relative to the directory containing the Makefile.
 It defaults to `.pluribus`.
-
-##### `documentclass` and `documentclass_options`
-These two strings are used for the first line of each LaTeX file:
-```
-\documentclass[<documentclass_options>]{<documentclass>}
-```
-For example, you might use:
-```
-documentclass = "memoir"
-documentclass_options = "a4paper,10pt"
-```
-The defaults are:
-```
-documentclass = "book"
-documentclass_options = ""
-```
 
 ##### `disable_safety`
 Pluribus ordinarily refuses to overwrite a Makefile which was not itself created by Pluribus.

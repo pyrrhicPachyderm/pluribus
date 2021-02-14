@@ -3,8 +3,6 @@ from pluribus.options import set_options
 
 class Config:
 	_options_default = {
-		"documentclass":"book",
-		"documentclass_options":"",
 		"disable_safety":False,
 		"makefile":"Makefile",
 		"makefile_standalone":True,
@@ -12,8 +10,6 @@ class Config:
 	}
 	
 	_options_type = {
-		"documentclass":str,
-		"documentclass_options":str,
 		"disable_safety":bool,
 		"makefile":str,
 		"makefile_standalone":bool,
