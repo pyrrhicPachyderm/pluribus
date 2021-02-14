@@ -1,0 +1,1 @@
+# pluribus(1) -- a build tool for LaTeX multi-volume books

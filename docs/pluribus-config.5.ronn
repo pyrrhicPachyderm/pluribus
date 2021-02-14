@@ -1,0 +1,1 @@
+# pluribus-config(5) -- config file format for pluribus
