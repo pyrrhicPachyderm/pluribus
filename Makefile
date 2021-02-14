@@ -5,6 +5,6 @@ install:
 	$(PIP) install .
 
 uninstall:
-	$(PIP) uninstall $(PACKAGE_NAME)
+	$(PIP) uninstall -y $(PACKAGE_NAME)
 
 .PHONY: install uninstall
