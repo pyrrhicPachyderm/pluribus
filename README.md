@@ -120,6 +120,6 @@ documentclass_options = ""
 ```
 
 ##### `disable_safety`
-Pluribus ordinary refuses to overwrite a Makefile which was not itself created by Pluribus.
+Pluribus ordinarily refuses to overwrite a Makefile which was not itself created by Pluribus.
 It inserts a comment in the first line of its own Makefiles to identify this.
 Setting `disable_safety = true` overrides this behaviour, allowing Pluribus to overwrite manually created Makefiles.
