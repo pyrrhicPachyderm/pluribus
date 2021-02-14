@@ -12,6 +12,8 @@ Furthermore, it can generate pluribuses: editions containing any subset of volum
 It manages the front and back matter, including the table of contents and index, within each volume and edition.
 Lastly, by leveraging [`zref-xr`](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
 
+### Usage
+
 **Pluribus** is run to generate a Makefile, which in turn can be used with GNU make(1) to compile your book's volumes, omnibus, and pluribuses.
 By default, it generates a standalone Makefile.
 However, it may be configured to generate a set of rules that can be incorporated into a project's overarching Makefile.
