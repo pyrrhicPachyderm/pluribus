@@ -43,6 +43,20 @@ Other volume properties are optional, and are given below.
 	
 	Normally, these will be the same for all volumes, and should be set with the reserved volume `all`.
 
+### Reserved volumes
+
+* `all`:
+	Any properties set in this volume are set for all other volumes, including `omnibus` and `pluribus`.
+	Any of these properties are overwritten for a given volume if they are set specifically in that volume's entry.
+
+* `omnibus`:
+	If this volume is included in the configuration, the resulting makefile will also contain a rule for generating an omnibus edition, which contains the main matter from every other specified volume.
+	The `content` volume property is not required or permitted for this volume.
+
+* `pluribus`:
+	If this volume is included in the configuration, the resulting makefile will also contain rules for generating pluribus editions, which include the main matter from a selection of the other specified volumes.
+	The `content` volume property is not required or permitted for this volume.
+
 ## EXAMPLES
 
 ### With standalone makefile
