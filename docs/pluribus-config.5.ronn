@@ -20,6 +20,28 @@ The available properties are described in the [volume properties][] section.
 Some volume tags are reserved by **Pluribus**, and can be used for purposes other than defining new volumes.
 These are described in the [reserved volumes][] section.
 
+### Volume properties
+
+Two of the volume properties are mandatory: `title` and `content`.
+`title` is a string, used as the title for the volume, set using LaTeX's `\title` command.
+`content` is also a string, used as a file path.
+This file must be a `.tex` file, containing the main matter for the volume.
+Other volume properties are optional, and are given below.
+
+* `documentclass` and `documentclass_options`:
+	These two strings are used for the first line of each LaTeX file:<br>
+	`\documentclass[`<documentclass_options>`]{`<documentclass>`}`
+	
+	For example, you might use:<br>
+	`documentclass = "memoir"`<br>
+	`documentclass_options = "a4paper,10pt"`
+	
+	The defaults are:<br>
+	`documentclass = "book"`<br>
+	`documentclass_options = ""`
+	
+	Normally, these will be the same for all volumes, and should be set with the reserved volume `all`.
+
 ## EXAMPLES
 
 ### With standalone makefile
