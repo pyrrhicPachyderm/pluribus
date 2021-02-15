@@ -1,5 +1,25 @@
 # pluribus-config(5) -- config file format for pluribus
 
+## DESCRIPTION
+
+**Pluribus**' configuration file uses the [TOML](https://github.com/toml-lang/toml) format.
+Note that this means you can use `#` to begin a comment within it.
+
+**Pluribus**' configuration file can be divided into two parts.
+The first consists of simple key-value pairs, separated by an `=` sign, that modify the overall behaviour of **Pluribus**.
+These should be at the beginning of the file, entirely before the second part.
+The available options are described in the [configuration options][] section.
+
+The second part details the various volumes to be managed by **Pluribus**.
+The information about each volume begins with the tag for the volume, in square brackets.
+For example `[the-first-volume]`.
+Every subsequent key-value pair defines a property of that volume.
+Some of these properties are mandatory, and must be included for every volume.
+The available properties are described in the [volume properties][] section.
+
+Some volume tags are reserved by **Pluribus**, and can be used for purposes other than defining new volumes.
+These are described in the [reserved volumes][] section.
+
 ## EXAMPLES
 
 ### With standalone makefile
