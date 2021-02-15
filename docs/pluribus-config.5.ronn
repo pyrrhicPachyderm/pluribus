@@ -31,6 +31,7 @@ Other volume properties are optional, and are given below.
 * `documentclass` and `documentclass_options`:
 	These two strings are used for the first line of each LaTeX file:<br>
 	`\documentclass[`<documentclass_options>`]{`<documentclass>`}`
+	<br><br>
 	
 	For example, you might use:<br>
 	`documentclass = "memoir"`<br>
