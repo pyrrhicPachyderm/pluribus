@@ -20,6 +20,17 @@ The available properties are described in the [volume properties][] section.
 Some volume tags are reserved by **Pluribus**, and can be used for purposes other than defining new volumes.
 These are described in the [reserved volumes][] section.
 
+### Relative paths
+
+Paths in **Pluribus**' configuration file are relative in an odd way, which may necessitate some care, but should simplify matters on the whole.
+
+The path to the makefile which **Pluribus** generates is relative to the location of the configuration file upon which **Pluribus** is run.
+This path is simply `Makefile` by default, so that the generated makefile is in the same directory as the configuration file, but this is configurable.
+This ensures that it does not matter from which directory **Pluribus** is run, only which configuration file it is run on.
+
+Every other path in the configuration file is relative to the makefile.
+This ensures that paths will be copied directly into the generated makefile without issue.
+
 ### Volume properties
 
 Two of the volume properties are mandatory: `title` and `content`.
