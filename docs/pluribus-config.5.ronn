@@ -56,6 +56,10 @@ Other volume properties are optional, and are given below.
 
 ### Reserved volumes
 
+Some volume tags are reserved by **Pluribus**.
+If used in a configuration file, these do not define new volumes, but modify the behaviour of **Pluribus** in other ways.
+These reserved volumes are described below.
+
 * `all`:
 	Any properties set in this volume are set for all other volumes, including `omnibus` and `pluribus`.
 	Any of these properties are overwritten for a given volume if they are set specifically in that volume's entry.
