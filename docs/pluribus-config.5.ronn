@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 
-**Pluribus**' configuration file uses the [TOML](https://github.com/toml-lang/toml) format.
+**Pluribus**' configuration file uses the [TOML] format.
 Note that this means you can use `#` to begin a comment within it.
 
 **Pluribus**' configuration file can be divided into two parts.

@@ -4,3 +4,8 @@ pluribus-config(5) pluribus-config.5.ronn
 
 #External manuals.
 make(1) http://man.cx/make(1)
+
+#Non-manual references for linking.
+zref https://ctan.org/pkg/zref
+TOML https://github.com/toml-lang/toml
+import https://ctan.org/pkg/import

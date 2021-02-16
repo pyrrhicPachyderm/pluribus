@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 
-#Ignore everything in the docs directory except the original ronn files.
+#Ignore everything in the docs directory except the original ronn files and index.txt.
 docs/*
 !docs/*.ronn
 !docs/index.txt

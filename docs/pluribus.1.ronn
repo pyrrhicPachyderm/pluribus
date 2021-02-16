@@ -10,7 +10,7 @@
 It generates the volumes in separate PDF files, and as an omnibus edition.
 Furthermore, it can generate pluribuses: editions containing any subset of volumes you select.
 It manages the front and back matter, including the table of contents and index, within each volume and edition.
-Lastly, by leveraging [`zref-xr`](https://ctan.org/pkg/zref), Pluribus facilitates references and hyperlinks within and between volumes.
+Lastly, by leveraging [`zref-xr`][zref], Pluribus facilitates references and hyperlinks within and between volumes.
 
 ### Usage
 
@@ -21,10 +21,10 @@ However, it may be configured to generate a set of rules that can be incorporate
 In order to use **Pluribus**, each volume should be written as a LaTeX file including only the main matter.
 This is all the content that would be placed between LaTeX's `\mainmatter` and `\backmatter` commands.
 The front matter and back matter are managed separately by **Pluribus**.
-Each main matter file is loaded in LaTeX using the [`\import`](https://ctan.org/pkg/import) command.
+Each main matter file is loaded in LaTeX using the [`\import`][import] command.
 As such, it may lie in any location on the file system, and can safely `\input`, `\include`, `\includegraphics`, or `\subimport` files relative to its own location.
 
-**Pluribus** relies on a configuration file, in the [TOML](https://github.com/toml-lang/toml) format.
+**Pluribus** relies on a configuration file, in the [TOML] format.
 This can be used to modify the behaviour of **Pluribus**, such as selecting between a standalone and partial Makefile.
 More importantly, however, the configuration file defines the volumes to be managed by **Pluribus**.
 The contents of the configuration file are detailed in pluribus-config(5).
