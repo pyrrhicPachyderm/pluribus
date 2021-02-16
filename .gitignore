@@ -4,3 +4,4 @@ __pycache__/
 #Ignore everything in the docs directory except the original ronn files.
 docs/*
 !docs/*.ronn
+!docs/index.txt

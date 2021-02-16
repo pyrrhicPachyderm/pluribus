@@ -1,0 +1,6 @@
+#Manuals included in this project.
+pluribus(1) pluribus.1.ronn
+pluribus-config(5) pluribus-config.5.ronn
+
+#External manuals.
+make(1) http://man.cx/make(1)
