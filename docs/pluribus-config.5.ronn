@@ -123,3 +123,7 @@ And the contents of `Makefile`, in the same directory as `pluribus-config.toml`:
 		pluribus $<
 
 This leverages GNU make's ability to generate makefiles which it is provided rules for, in order to include them.
+
+## CONFORMING TO
+
+TOML v1.0.0
