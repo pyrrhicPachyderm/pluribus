@@ -57,6 +57,28 @@ Other volume properties are optional, and are given below.
 	If this volume is included in the configuration, the resulting makefile will also contain rules for generating pluribus editions, which include the main matter from a selection of the other specified volumes.
 	The `content` volume property is not required or permitted for this volume.
 
+### Configuration options
+
+Configuration options modify the overall behaviour of **Pluribus**. They should be set above any volme definitions in the configuration file.
+The following options are available:
+
+* `makefile`:
+	This string sets the path of the makefile created by **Pluribus**, relative to the configuration file.
+	The default is `Makefile`.
+
+* `makefile_standalone`:
+	This sets whether the makefile created by **Pluribus** is intended to stand alone or not; whether it features an `all` rule.
+	It defaults to `true`.
+
+* `pluribus_directory`:
+	This sets the path to the directory where **Pluribus** creates its `.tex` files, and other supporting files, relative to the directory containing the makefile.
+	It defaults to `.pluribus`.
+
+* `disable_safety`:
+	**Pluribus** ordinarily refuses to overwrite a makefile which was not itself created by **Pluribus**.
+	It inserts a comment in the first line of its own makefiles to identify this.
+	Setting `disable_safety = true` overrides this behaviour, allowing **Pluribus** to overwrite manually created makefiles.
+
 ## EXAMPLES
 
 ### With standalone makefile
