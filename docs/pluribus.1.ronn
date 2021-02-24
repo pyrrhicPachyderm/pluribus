@@ -10,7 +10,7 @@
 It generates the volumes in separate PDF files, and as an omnibus edition.
 Furthermore, it can generate pluribuses: editions containing any subset of volumes you select.
 It manages the front and back matter, including the table of contents and index, within each volume and edition.
-Lastly, by leveraging [`zref-xr`][zref], Pluribus facilitates references and hyperlinks within and between volumes.
+Lastly, by leveraging [`xr`][xr], Pluribus facilitates references within and between volumes.
 
 ### Usage
 
